@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = $conn->prepare("INSERT INTO credenciales (correo, contrasena) VALUES (?, ?)");
         if (!$stmt) throw new Exception($conn->error);
         $stmt->bind_param("ss", $correo, $contrasena);
-        $stmt->execute();
+        if (!$stmt->execute()) throw new Exception($stmt->error);
         $idCredenciales = $conn->insert_id;
         $stmt->close();
 
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 VALUES (?, 2, 1, ?, ?, ?, ?)");
         if (!$stmt2) throw new Exception($conn->error);
         $stmt2->bind_param("issss", $idCredenciales, $nombre, $apellido, $telefono, $ci);
-        $stmt2->execute();
+        if (!$stmt2->execute()) throw new Exception($stmt2->error);
         $idUsuario = $conn->insert_id;
         $stmt2->close();
 
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt3 = $conn->prepare("INSERT INTO cliente (idUsuario) VALUES (?)");
         if (!$stmt3) throw new Exception($conn->error);
         $stmt3->bind_param("i", $idUsuario);
-        $stmt3->execute();
+        if (!$stmt3->execute()) throw new Exception($stmt3->error);
         $stmt3->close();
 
         $conn->commit();
