@@ -146,7 +146,7 @@ pytest tests_selenium_generados/test_03_login_usuario.py -v -s
 
 ---
 
-### ✅TEST 04: Flujo Completo (Registro + Logout + Login)
+### TEST 04: Flujo Completo (Registro + Logout + Login)
 **Archivo:** `test_04_flujo_registro_y_login.py`
 
 **Valida - PARTE 1 (Registro):**
@@ -175,7 +175,7 @@ pytest tests_selenium_generados/test_04_flujo_registro_y_login.py -v -s
 
 ---
 
-### ✅ TEST 05: Validaciones de Campos
+###  TEST 05: Validaciones de Campos
 **Archivo:** `test_05_validaciones_campos.py`
 
 **10 Sub-tests que validan:**
@@ -214,7 +214,7 @@ pytest tests_selenium_generados/test_05_validaciones_campos.py -v -s
 
 ---
 
-## 🔍 Selectors Reales Utilizados
+## Selectors Reales Utilizados
 
 ### IDs de Campos
 - `#nombre` - Campo nombre registro
@@ -271,24 +271,5 @@ pip install webdriver-manager
 
 ### Todos los Tests Pasados
 
-```
-============================= test session starts ==============================
-collected 15 items
+<img width="1217" height="1009" alt="image" src="https://github.com/user-attachments/assets/ed28c156-ca9b-462c-8d29-945d58030d40" />
 
-test_01_acceso_carrito_sin_login.py::TestAccesoCarritoSinLogin::... PASSED [  6%]
-test_02_registro_usuario.py::TestRegistroUsuario::... PASSED         [ 13%]
-test_03_login_usuario.py::TestLoginUsuario::... PASSED               [ 20%]
-test_04_flujo_registro_y_login.py::TestFlujoRegistroLogin::... PASSED [ 26%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_01... PASSED [ 33%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_02... PASSED [ 40%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_03... PASSED [ 46%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_04... PASSED [ 53%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_05... PASSED [ 60%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_06... PASSED [ 66%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_07... PASSED [ 73%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_08... PASSED [ 80%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_09... PASSED [ 86%]
-test_05_validaciones_campos.py::TestValidacionesCampos::test_10... PASSED [ 93%]
-
-===================== 14 passed in 120.54s (0:02:00) ========================
-```
