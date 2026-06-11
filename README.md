@@ -295,7 +295,7 @@ test_05_validaciones_campos.py::TestValidacionesCampos::test_10... PASSED [ 93%]
 
 ---
 
-## 📚 Documentación Adicional
+##  Documentación Adicional
 
 Para información detallada sobre:
 - Qué se encontró en el sistema → Ver `RESUMEN.md`
@@ -305,7 +305,7 @@ Para información detallada sobre:
 
 ---
 
-## 🎓 Características Técnicas
+##  Características Técnicas
 
 - **Selenium WebDriver:** Versión 4.x
 - **Pytest:** Framework de testing
@@ -318,7 +318,7 @@ Para información detallada sobre:
 
 ---
 
-## 📞 Contacto
+##  Contacto
 
 Para dudas sobre los tests o el análisis:
 - Revisar `RESUMEN.md` para detalles técnicos
